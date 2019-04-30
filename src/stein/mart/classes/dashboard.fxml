@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1054.0" style="-fx-background-color: #145b70;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stein.mart.classes.DashboardController">
+   <right>
+      <VBox alignment="BOTTOM_CENTER" prefHeight="581.0" prefWidth="156.0" spacing="5.0" style="-fx-background-color: #0d3e4c;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #f3f3f3; -fx-background-radius: 5;" />
+            <Button fx:id="totalSales" mnemonicParsing="false" onAction="#callTotal" prefHeight="122.0" prefWidth="161.0" style="-fx-background-color: #145B94; -fx-background-radius: 5;" text="Total Sales" textFill="#ddd7d7">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="online" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#callOnline" prefHeight="122.0" prefWidth="161.0" style="-fx-background-color: #145B94; -fx-background-radius: 5;" text="Online Sales" textFill="#ddd7d7">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="offline" layoutX="10.0" layoutY="132.0" mnemonicParsing="false" onAction="#callOffline" prefHeight="122.0" prefWidth="161.0" style="-fx-background-color: #145B94; -fx-background-radius: 5;" text="Offline Sales" textFill="#ddd7d7">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+            <Button fx:id="profits" layoutX="10.0" layoutY="254.0" mnemonicParsing="false" onAction="#callProfits" prefHeight="122.0" prefWidth="161.0" style="-fx-background-color: #145B94; -fx-background-radius: 5;" text="Profits" textFill="#ddd7d7">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </right>
+   <left>
+      <VBox prefHeight="659.0" prefWidth="169.0" spacing="30.0" style="-fx-background-color: #0d3e4c;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="470.0" prefWidth="165.0" style="-fx-background-color: #F3F3F3; -fx-background-radius: 5;">
+               <children>
+                  <Label fx:id="cashierName" layoutX="17.0" layoutY="152.0" prefHeight="22.0" prefWidth="148.0" text="cashier name">
+                     <font>
+                        <Font name="Century Gothic" size="13.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="183.0" prefHeight="18.0" prefWidth="117.0" text="ID" textFill="#3c3939">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="231.0" prefHeight="18.0" prefWidth="117.0" text="Address" textFill="#3c3939">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="296.0" prefHeight="18.0" prefWidth="117.0" text="Phone " textFill="#3c3939">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="342.0" prefHeight="18.0" prefWidth="117.0" text="Mail" textFill="#3c3939">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cashierID" layoutX="18.0" layoutY="201.0" prefHeight="17.0" prefWidth="152.0" text="ID">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cashierAddress" layoutX="18.0" layoutY="249.0" prefHeight="31.0" prefWidth="152.0" text="Address">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cashierPhone" layoutX="18.0" layoutY="314.0" prefHeight="17.0" prefWidth="152.0" text="Phone">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="cashierMail" layoutX="18.0" layoutY="360.0" prefHeight="17.0" prefWidth="152.0" text="Mail">
+                     <font>
+                        <Font name="Segoe UI" size="12.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="134.0" prefHeight="18.0" prefWidth="117.0" text="Name" textFill="#3c3939">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="18.0" layoutY="5.0" prefHeight="18.0" prefWidth="117.0" text="Admin" textFill="#3c3939">
+                     <font>
+                        <Font name="Century Gothic Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fx:id="cashierImage" fitHeight="108.0" fitWidth="174.0" layoutY="23.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </Pane>
+            <Button fx:id="clearCenter" mnemonicParsing="false" onAction="#clearCenter" prefHeight="126.0" prefWidth="159.0" style="-fx-background-color: #145B94; -fx-background-radius: 5;" text="CLEAR" textFill="#ddd7d7">
+               <font>
+                  <Font name="Segoe UI" size="17.0" />
+               </font>
+            </Button>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="543.0" prefWidth="438.0" style="-fx-background-color: #13576b; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stein.mart.classes.NewProductsController">
+   <center>
+      <VBox prefHeight="543.0" prefWidth="465.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="66.0" prefWidth="428.0" style="-fx-background-color: #0e4150; -fx-background-radius: 10;">
+               <children>
+                  <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Stock Editor" textAlignment="CENTER" wrappingWidth="178.208984375">
+                     <font>
+                        <Font name="Ubuntu Light" size="22.0" />
+                     </font>
+                  </Text>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox prefHeight="483.0" prefWidth="428.0" style="-fx-background-color: #0e4150; -fx-background-radius: 10;">
+               <children>
+                  <VBox prefHeight="483.0" prefWidth="176.0" spacing="10.0">
+                     <children>
+                        <Label prefHeight="40.0" prefWidth="145.0" text="ID" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="145.0" text="Product" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="60.0" prefHeight="40.0" prefWidth="145.0" text="Unit Price" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="110.0" prefHeight="40.0" prefWidth="145.0" text="Discount" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="10.0" layoutY="160.0" prefHeight="40.0" prefWidth="145.0" text="Stock Left" textFill="WHITE">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets right="5.0" top="5.0" />
+                     </padding>
+                  </VBox>
+                  <VBox prefHeight="483.0" prefWidth="315.0" spacing="10.0">
+                     <children>
+                        <TextField fx:id="textID" prefHeight="40.0" prefWidth="284.0" />
+                        <TextField fx:id="textProduct" layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="284.0" />
+                        <TextField fx:id="txtUnitPrice" layoutX="10.0" layoutY="60.0" prefHeight="40.0" prefWidth="284.0" />
+                        <TextField fx:id="txtDiscount" layoutX="10.0" layoutY="110.0" prefHeight="40.0" prefWidth="284.0" />
+                        <TextField fx:id="textStockleft" layoutX="10.0" layoutY="160.0" prefHeight="40.0" prefWidth="284.0" />
+                     </children>
+                  </VBox>
+               </children>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="10.0" />
+               </padding>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox prefHeight="73.0" prefWidth="438.0" spacing="5.0" style="-fx-background-color: #0e4150; -fx-background-radius: 10;" BorderPane.alignment="CENTER_LEFT">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <JFXButton fx:id="save" onAction="#saveProducts" prefHeight="63.0" prefWidth="137.0" style="-fx-background-color: #045db5;" text="Save" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="clear" layoutX="15.0" layoutY="15.0" onAction="#clearScreen" prefHeight="63.0" prefWidth="137.0" style="-fx-background-color: #045db5;" text="Clear" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </JFXButton>
+            <JFXButton fx:id="quit" layoutX="157.0" layoutY="15.0" onAction="#quitS" prefHeight="63.0" prefWidth="137.0" style="-fx-background-color: #045db5;" text="Quit" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="20.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

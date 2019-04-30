@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="659.0" prefWidth="1059.0" style="-fx-background-color: #13576b; -fx-background-radius: 5;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stein.mart.classes.StockController">
+   <left>
+      <VBox prefHeight="659.0" prefWidth="165.0" spacing="10.0" style="-fx-background-color: #0E4150;" BorderPane.alignment="TOP_CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <children>
+            <Pane prefHeight="82.0" prefWidth="199.0" style="-fx-background-color: #145;">
+               <children>
+                  <Text fill="WHITE" layoutX="25.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STOCK " wrappingWidth="104.208984375">
+                     <font>
+                        <Font name="Century Gothic" size="30.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="419.0" prefWidth="209.0" spacing="10.0" style="-fx-background-color: #F7F7F7; -fx-background-radius: 5;">
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <children>
+                  <Button fx:id="addProducts" mnemonicParsing="false" onAction="#addProducts" prefHeight="121.0" prefWidth="199.0" style="-fx-background-color: #333333; -fx-background-radius: 5;" text="ADD" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="deleteProducts" mnemonicParsing="false" onAction="#deleteProducts" prefHeight="131.0" prefWidth="199.0" style="-fx-background-color: #333333; -fx-background-radius: 5;" text="DELETE" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="30.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="updateProducts" mnemonicParsing="false" onAction="#updateProducts" prefHeight="129.0" prefWidth="199.0" style="-fx-background-color: #333333; -fx-background-radius: 5;" text="UPDATE" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Light" size="29.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <VBox prefHeight="659.0" prefWidth="676.0" spacing="10.0" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+         </padding>
+         <children>
+            <HBox prefHeight="77.0" prefWidth="714.0">
+               <children>
+                  <TextField alignment="CENTER" prefHeight="77.0" prefWidth="568.0" promptText="ENTER PRODUCT ID">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <HBox.margin>
+                        <Insets right="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Segoe UI" size="29.0" />
+                     </font>
+                  </TextField>
+                  <Button fx:id="search" mnemonicParsing="false" onAction="#addProductsToTable" prefHeight="77.0" prefWidth="156.0" style="-fx-background-color: #045DB5; -fx-background-radius: 5;" text="SEARCH" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Segoe UI" size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <TableView fx:id="StockTable" prefHeight="461.0" prefWidth="722.0" style="-fx-background-radius: 5;">
+              <columns>
+                <TableColumn fx:id="ID" prefWidth="78.0" text="ID" />
+                <TableColumn fx:id="product" prefWidth="257.0" text="PRODUCT" />
+                  <TableColumn fx:id="unitPrice" prefWidth="124.0" text="UNIT_PRICE" />
+                  <TableColumn fx:id="discount" prefWidth="85.0" text="DISCOUNT" />
+                  <TableColumn fx:id="stockLeft" prefWidth="126.0" text="STOCK_LEFT" />
+                  <TableColumn fx:id="action" prefWidth="37.0" text="ACT" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <VBox prefHeight="659.0" prefWidth="152.0" style="-fx-background-color: #0E4150;" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

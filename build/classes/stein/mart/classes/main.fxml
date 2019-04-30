@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="borderpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="687.0" prefWidth="1350.0" style="-fx-background-color: #fafafa;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stein.mart.classes.MainController">
+   <left>
+      <VBox prefHeight="670.0" prefWidth="184.0" spacing="10.0" style="-fx-background-color: #1664a3;" BorderPane.alignment="CENTER">
+         <children>
+            <Pane prefHeight="112.0" prefWidth="144.0" style="-fx-background-color: #1f8fe8;">
+               <children>
+                  <Text fill="WHITE" layoutX="52.0" layoutY="56.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Stein">
+                     <font>
+                        <Font name="Segoe UI Light" size="39.0" />
+                     </font>
+                  </Text>
+                  <Text fill="WHITE" layoutX="72.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MART">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Text>
+               </children>
+            </Pane>
+            <Button fx:id="dashboard" mnemonicParsing="false" onAction="#gotoDashboard" prefHeight="139.0" prefWidth="189.0" style="-fx-background-color: #155F9B;" text="Dashboard" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="pos" layoutX="10.0" layoutY="122.0" mnemonicParsing="false" onAction="#gotoPOS" prefHeight="140.0" prefWidth="184.0" style="-fx-background-color: #155F9B;" text="POS" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="stock" layoutX="10.0" layoutY="262.0" mnemonicParsing="false" onAction="#gotoStock" prefHeight="140.0" prefWidth="188.0" style="-fx-background-color: #155F9B;" text="Stock" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="management" layoutX="10.0" layoutY="402.0" mnemonicParsing="false" onAction="#gotoManagement" prefHeight="140.0" prefWidth="190.0" style="-fx-background-color: #155F9B;" text="Management" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI Light" size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <bottom>
+      <HBox prefHeight="17.0" prefWidth="1300.0" style="-fx-background-color: #001A20;" BorderPane.alignment="CENTER" />
+   </bottom>
+   <right>
+      <Pane prefHeight="670.0" prefWidth="18.0" BorderPane.alignment="CENTER" />
+   </right>
+</BorderPane>

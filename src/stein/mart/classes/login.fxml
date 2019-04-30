@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="507.0" prefWidth="852.0" style="-fx-background-radius: 5; -fx-border-radius: 5; -fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="stein.mart.classes.LoginController">
+   <children>
+      <Pane layoutX="399.0" layoutY="66.0" prefHeight="405.0" prefWidth="400.0" style="-fx-background-color: #045db5; -fx-background-radius: 5;">
+         <children>
+            <Label layoutX="144.0" layoutY="14.0" prefHeight="19.0" prefWidth="124.0" text="MEMBER LOGIN" textFill="WHITE">
+               <font>
+                  <Font name="Segoe UI" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtUser" layoutX="107.0" layoutY="106.0" prefHeight="25.0" prefWidth="243.0" promptText="username" style="-fx-background-color: #045db5; -fx-text-fill: #ffffff; -fx-prompttext-fill: #ffffff;">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="txtPassword" layoutX="107.0" layoutY="182.0" prefHeight="25.0" prefWidth="243.0" promptText="password" style="-fx-background-color: #045db5; -fx-text-fill: #ffffff;">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </PasswordField>
+            <Separator layoutX="54.0" layoutY="131.0" prefHeight="4.0" prefWidth="295.0" />
+            <Separator layoutX="53.0" layoutY="207.0" prefHeight="4.0" prefWidth="295.0" />
+            <ImageView fitHeight="25.0" fitWidth="33.0" layoutX="61.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Male_User_32px_1.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="25.0" fitWidth="33.0" layoutX="61.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/icons8_Lock_32px_2.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="forgotPassword" layoutX="188.0" layoutY="224.0" onMouseClicked="#forgotPass" prefHeight="17.0" prefWidth="159.0" text="Forgot Password??" textFill="#fcfcfc">
+               <font>
+                  <Font name="Century Gothic" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblError" layoutX="100.0" layoutY="353.0" prefHeight="17.0" prefWidth="177.0" />
+            <JFXButton fx:id="login" buttonType="RAISED" layoutX="59.0" layoutY="288.0" onAction="#processLogin" prefHeight="50.0" prefWidth="295.0" ripplerFill="#045db5" style="-fx-background-color: #FFFFFF; -fx-background-radius: 5;" text="LOGIN" textFill="#045db5">
+               <font>
+                  <Font name="Century Gothic" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+      <ImageView fitHeight="94.0" fitWidth="105.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/images.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="150.0" fitWidth="215.0" layoutX="79.0" layoutY="237.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/Copy%20of%20loginga.jpg" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="120.0" layoutY="94.0" prefHeight="50.0" prefWidth="151.0" text="Welcome " textFill="#045db5">
+         <font>
+            <Font name="Segoe UI Light" size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="154.0" prefHeight="20.0" prefWidth="234.0" text="Please  login to your account">
+         <font>
+            <Font name="Century Gothic" size="16.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="close" buttonType="RAISED" layoutX="799.0" layoutY="5.0" onAction="#close" prefHeight="4.0" prefWidth="41.0" ripplerFill="#eeeeee" style="-fx-background-color: #045DB5; -fx-background-radius: 5;" text="x" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Light" size="19.0" />
+         </font>
+      </JFXButton>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</AnchorPane>
